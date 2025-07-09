@@ -79,7 +79,7 @@ export default function Home() {
     },
     {
       question: "Why did you start this?",
-      answer: "I've been a walking question mark about my future since forever. The type who stands in front of Netflix for an hour trying to pick something to watch, except it's my entire life. I became a professional interest-hopper, jumping from engineering to business to law in about ten minutes while everyone kept saying 'Engineering is so hard, can you handle it?' or 'Only people who don't know what they want choose business.' I felt like I was drowning in opinions while experiencing full-blown decision paralysis, lying awake thinking everyone else had their life together while I was a confused tourist without a map."
+      answer: "I don't want people to go through what I did - feeling completely lost about their future, overwhelmed by everyone's opinions, and paralyzed by indecision while thinking everyone else had it figured out."
     },
     {
       question: "How does this work?",
