@@ -185,7 +185,7 @@ export default function Home() {
     </section>
   );
 
-  // Founder Story Section
+
 // Founder Story Section
 const FounderSection = () => (
   <section className="py-20" style={{ backgroundColor: theme.surface }}>
@@ -221,7 +221,7 @@ const FounderSection = () => (
             src="/founder-photo.png" 
             alt="YLCD Founder" 
             className="w-80 h-80 rounded-3xl object-cover"
-            style={{ border: `2px solid ${theme.primary}` }}
+            style={{ border: `2px solid ${theme.accent}` }}
           />
         </div>
       </div>
