@@ -78,7 +78,7 @@ export default function Home() {
       answer: "YLCD was founded by a student who gets it. Unlike other programs where some adult in a suit gives you the sanitized, picture-perfect version of their job, we bring you the real deal. You'll hear from the whole family tree: people just starting out, those in the thick of it, and the ones who have made it to the top."
     },
     {
-      question: "Why did you staaaart this?",
+      question: "Why did you start this?",
       answer: "I don't want people to go through what I did - feeling completely lost about their future, overwhelmed by everyone's opinions, and paralyzed by indecision while thinking everyone else had it figured out."
     },
     {
