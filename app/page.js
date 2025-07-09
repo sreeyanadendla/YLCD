@@ -221,7 +221,7 @@ const FounderSection = () => (
             src="/founder-photo.png" 
             alt="YLCD Founder" 
             className="w-80 h-80 rounded-3xl object-cover"
-            style={{ border: `2px solid ${theme.secondary}` }}
+            style={{ border: `2px solid ${theme.accent}` }}
           />
         </div>
       </div>
