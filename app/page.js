@@ -218,7 +218,7 @@ const FounderSection = () => (
         </div>
         <div className="flex justify-center">
           <img 
-            src="/founder-photo.png" 
+            src="/founder_photo.png" 
             alt="YLCD Founder" 
             className="w-80 h-80 rounded-3xl object-cover"
             style={{ border: `2px solid ${theme.accent}` }}
