@@ -186,47 +186,48 @@ export default function Home() {
   );
 
   // Founder Story Section
-  const FounderSection = () => (
-    <section className="py-20" style={{ backgroundColor: theme.surface }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 
-              className="text-3xl sm:text-4xl font-bold mb-6"
-              style={{ 
-                fontFamily: 'Instrument Serif, serif',
-                color: theme.text 
-              }}
-            >
-              Hey, I'm the confused kid who started this
-            </h2>
-            <div className="space-y-4" style={{ color: theme.textLight }}>
-              <p>
-                I've been a walking question mark about my future since forever. The type who stands in front of Netflix for an hour trying to pick something to watch, except it's my entire life.
-              </p>
-              <p>
-                I became a professional interest-hopper, jumping from engineering to business to law in about ten minutes while everyone kept saying "Engineering is so hard, can you handle it?" or "Only people who don't know what they want choose business."
-              </p>
-              <p>
-                I felt like I was drowning in opinions while experiencing full-blown decision paralysis, lying awake thinking everyone else had their life together while I was a confused tourist without a map.
-              </p>
-              <p>
-                Plot twist: I'm still figuring things out, and that's exactly why this matters. I don't want you lying awake feeling like a broken GPS, thinking something's wrong with you for not having your entire existence mapped out at sixteen.
-              </p>
-            </div>
-          </div>
-          <div className="flex justify-center">
-            <div 
-              className="w-80 h-80 rounded-3xl flex items-center justify-center text-6xl"
-              style={{ backgroundColor: theme.neutral }}
-            >
-              📸
-            </div>
+// Founder Story Section
+const FounderSection = () => (
+  <section className="py-20" style={{ backgroundColor: theme.surface }}>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 
+            className="text-3xl sm:text-4xl font-bold mb-6"
+            style={{ 
+              fontFamily: 'Instrument Serif, serif',
+              color: theme.text 
+            }}
+          >
+            Hey, I'm the confused kid who started this
+          </h2>
+          <div className="space-y-4" style={{ color: theme.textLight }}>
+            <p>
+              I've been a walking question mark about my future since forever. The type who stands in front of Netflix for an hour trying to pick something to watch, except it's my entire life.
+            </p>
+            <p>
+              I became a professional interest-hopper, jumping from engineering to business to law in about ten minutes while everyone kept saying "Engineering is so hard, can you handle it?" or "Only people who don't know what they want choose business."
+            </p>
+            <p>
+              I felt like I was drowning in opinions while experiencing full-blown decision paralysis, lying awake thinking everyone else had their life together while I was a confused tourist without a map.
+            </p>
+            <p>
+              Plot twist: I'm still figuring things out, and that's exactly why this matters. I don't want you lying awake feeling like a broken GPS, thinking something's wrong with you for not having your entire existence mapped out at sixteen.
+            </p>
           </div>
         </div>
+        <div className="flex justify-center">
+          <img 
+            src="/founder-photo.png" 
+            alt="YLCD Founder" 
+            className="w-80 h-80 rounded-3xl object-cover"
+            style={{ border: `2px solid ${theme.primary}` }}
+          />
+        </div>
       </div>
-    </section>
-  );
+    </div>
+  </section>
+);
 
   // Events Preview Section
   const EventsPreview = () => (
