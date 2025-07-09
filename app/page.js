@@ -85,7 +85,7 @@ export default function Home() {
       question: "How does this work?",
       answer: "Check out our Instagram or website to see what's coming up, then sign up for whatever catches your eye. Your first time is free. We want to remove every barrier to you figuring this out. After that, it's just $5 per event. Each session includes real talk with professionals who won't sugarcoat their experiences, hands-on activities that give you a taste of the actual work, and chances to connect with people who might become your future network or even lifelong friends."
     }
-  ];
+  ]; 
 
   // Header Component
   const Header = () => (
