@@ -211,7 +211,7 @@ export default function Home() {
                 I felt like I was drowning in opinions while experiencing full-blown decision paralysis, lying awake thinking everyone else had their life together while I was a confused tourist without a map.
               </p>
               <p>
-                PLOOOOT twist: I'm still figuring things out, and that's exactly why this matters. I don't want you lying awake feeling like a broken GPS, thinking something's wrong with you for not having your entire existence mapped out at sixteen.
+                Plot twist: I'm still figuring things out, and that's exactly why this matters. I don't want you lying awake feeling like a broken GPS, thinking something's wrong with you for not having your entire existence mapped out at sixteen.
               </p>
             </div>
           </div>
