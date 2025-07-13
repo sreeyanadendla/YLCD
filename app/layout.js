@@ -51,18 +51,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        {/* Add your logo to the top left */}
-        <header style={{ padding: "1rem" }}>
-          <Link href="/">
-            <Image
-              src="/ylcd-logo.png" // make sure this is in public folder!
-              alt="YLCD Logo"
-              width={50}
-              height={50}
-              priority
-            />
-          </Link>
-        </header>
         {children}
       </body>
     </html>
