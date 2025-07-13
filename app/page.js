@@ -87,70 +87,70 @@ export default function Home() {
     }
   ]; 
 
-  // Header Component
-  const Header = () => (
-    <header className="border-b" style={{ borderColor: theme.neutral, backgroundColor: theme.background }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-6">
-          {/* Logo */}
-          <div 
-            className="cursor-pointer"
-            onClick={() => setCurrentPage('home')}
-          >
-            <h1 className="text-2xl font-bold" style={{ 
-              fontFamily: 'Instrument Serif, serif',
-              color: theme.text 
-            }}>
-              YLCD
-            </h1>
-          </div>
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => setCurrentPage(item.id)}
-                className={`font-medium transition-colors duration-200 ${
-                  currentPage === item.id ? 'border-b-2' : ''
-                }`}
-                style={{ 
-                  color: currentPage === item.id ? theme.primary : theme.textLight,
-                  borderColor: currentPage === item.id ? theme.primary : 'transparent'
-                }}
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
-          {/* Mobile menu button only */}
-          <button
-            className="md:hidden p-2"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? '✕' : '☰'}
-          </button>
+// Header Component
+const Header = () => (
+  <header className="border-b" style={{ borderColor: theme.neutral, backgroundColor: theme.background }}>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="flex justify-between items-center py-6">
+        {/* Logo */}
+        <div 
+          className="cursor-pointer"
+          onClick={() => setCurrentPage('home')}
+        >
+          <img 
+            src="/ylcd-logo.png" 
+            alt="YLCD Logo" 
+            style={{ height: "36px", width: "auto" }}
+          />
         </div>
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <nav className="md:hidden border-t py-4" style={{ borderColor: theme.neutral }}>
-            {navItems.map((item) => (
-              <button
-                key={item.id}
-                onClick={() => {
-                  setCurrentPage(item.id);
-                  setMobileMenuOpen(false);
-                }}
-                className="block w-full text-left py-2 font-medium"
-                style={{ color: currentPage === item.id ? theme.primary : theme.textLight }}
-              >
-                {item.label}
-              </button>
-            ))}
-          </nav>
-        )}
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex space-x-8">
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => setCurrentPage(item.id)}
+              className={`font-medium transition-colors duration-200 ${
+                currentPage === item.id ? 'border-b-2' : ''
+              }`}
+              style={{ 
+                color: currentPage === item.id ? theme.primary : theme.textLight,
+                borderColor: currentPage === item.id ? theme.primary : 'transparent'
+              }}
+            >
+              {item.label}
+            </button>
+          ))}
+        </nav>
+        {/* Mobile menu button only */}
+        <button
+          className="md:hidden p-2"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
+          {mobileMenuOpen ? '✕' : '☰'}
+        </button>
       </div>
-    </header>
-  );
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <nav className="md:hidden border-t py-4" style={{ borderColor: theme.neutral }}>
+          {navItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => {
+                setCurrentPage(item.id);
+                setMobileMenuOpen(false);
+              }}
+              className="block w-full text-left py-2 font-medium"
+              style={{ color: currentPage === item.id ? theme.primary : theme.textLight }}
+            >
+              {item.label}
+            </button>
+          ))}
+        </nav>
+      )}
+    </div>
+  </header>
+);
+
 
   // Hero Section
   const HeroSection = () => (
