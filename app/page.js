@@ -114,6 +114,7 @@ const Header = () => (
               className={`font-medium transition-colors duration-200 ${
                 currentPage === item.id ? 'border-b-2' : ''
               }`}
+              
               style={{ 
                 color: currentPage === item.id ? theme.primary : theme.textLight,
                 borderColor: currentPage === item.id ? theme.primary : 'transparent'
@@ -661,23 +662,29 @@ const FounderSection = () => (
   };
 
   return (
-    <div style={{ backgroundColor: theme.background, color: theme.text, minHeight: '100vh' }}>
+    <div
+      style={{
+        backgroundColor: theme.background,
+        color: theme.text,
+        minHeight: '100vh',
+      }}
+    >
       <style jsx>{`
-        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Source+Sans+Pro&display=swap');
+  
         * {
           font-family: 'Source Sans Pro', sans-serif;
         }
-        
+  
         button:hover {
           transform: translateY(-1px);
         }
-        
+  
         .hover\\:scale-105:hover {
           transform: scale(1.05);
         }
       `}</style>
-      
+  
       <Header />
       {renderPage()}
       <Footer />
