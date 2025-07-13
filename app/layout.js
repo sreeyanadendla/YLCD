@@ -18,12 +18,11 @@ export const metadata = {
   description: "Where students explore careers, leadership, and their real potential.",
   icons: {
     icon: [
-      { url: "/favicon.ico", type: "image/x-icon" },
-      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
-      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/ylcd-logo.png", type: "image/png" }
     ],
-    apple: "/apple-touch-icon.png",
+    apple: "/ylcd-logo.png",
   },
+  
   manifest: "/site.webmanifest",
   openGraph: {
     title: "Young Leaders Career Discovery",
