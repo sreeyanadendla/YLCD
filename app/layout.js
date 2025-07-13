@@ -15,7 +15,10 @@ export const metadata = {
   title: "Young Leaders Career Discovery",
   description: "Where students explore careers, leadership, and their real potential.",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico", type: "image/x-icon" },
+      { url: "/favicon.png", type: "image/png" }, // optional backup if you add this later
+    ],
   },
   openGraph: {
     title: "Young Leaders Career Discovery",
@@ -39,7 +42,6 @@ export const metadata = {
     images: ["/preview.png"],
   },
 };
-
 
 
 
