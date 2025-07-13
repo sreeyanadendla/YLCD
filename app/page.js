@@ -1,6 +1,8 @@
 'use client'
 
 import React, { useState } from 'react';
+import Image from "next/image";
+
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -187,7 +189,6 @@ const Header = () => (
 
 
 // Founder Story Section
-import Image from "next/image";
 
 const FounderSection = () => (
   <section>
