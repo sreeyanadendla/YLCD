@@ -17,9 +17,12 @@ export const metadata = {
   icons: {
     icon: [
       { url: "/favicon.ico", type: "image/x-icon" },
-      { url: "/favicon.png", type: "image/png" }, // optional backup if you add this later
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
     ],
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
   openGraph: {
     title: "Young Leaders Career Discovery",
     description: "Where students explore careers, leadership, and their real potential.",
@@ -27,7 +30,7 @@ export const metadata = {
     siteName: "YLCD",
     images: [
       {
-        url: "/preview.png",
+        url: "/android-chrome-512x512.png",
         width: 512,
         height: 512,
         alt: "YLCD Logo",
@@ -39,9 +42,10 @@ export const metadata = {
     card: "summary_large_image",
     title: "Young Leaders Career Discovery",
     description: "Where students explore careers, leadership, and their real potential.",
-    images: ["/preview.png"],
+    images: ["/android-chrome-512x512.png"],
   },
 };
+
 
 
 
