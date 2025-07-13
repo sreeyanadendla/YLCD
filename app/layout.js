@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Young Leaders Career Discovery",
+  title: "YLCD",
   description: "Where students explore careers, leadership, and their real potential.",
   icons: {
     icon: [
@@ -21,7 +21,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "YLCD",
+    title: "Young Leaders Career Discovery",
     description: "Where students explore careers, leadership, and their real potential.",
     url: "https://youngleaderscareerdiscovery.com",
     siteName: "YLCD",
