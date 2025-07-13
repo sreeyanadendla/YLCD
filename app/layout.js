@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from "next/link"; // ← make sure this is imported
+import Image from "next/image"; // ← this too
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,15 +48,22 @@ export const metadata = {
   },
 };
 
-
-
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        {/* Add your logo to the top left */}
+        <header style={{ padding: "1rem" }}>
+          <Link href="/">
+            <Image
+              src="/ylcd-logo.png" // make sure this is in public folder!
+              alt="YLCD Logo"
+              width={50}
+              height={50}
+              priority
+            />
+          </Link>
+        </header>
         {children}
       </body>
     </html>
