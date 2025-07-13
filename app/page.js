@@ -188,7 +188,6 @@ const Header = () => (
   );
 
   
-
 // Founder Story Section
 
 const FounderSection = () => (
@@ -219,10 +218,7 @@ const FounderSection = () => (
             alt="YLCD Founder"
             width={320}
             height={320}
-            style={{
-              objectFit: 'cover',
-              borderRadius: '999px'
-            }}
+            className="rounded-3xl object-cover"
             priority
           />
         </div>
@@ -230,7 +226,6 @@ const FounderSection = () => (
     </div>
   </section>
 );
-
 
   // Events Preview Section
   const EventsPreview = () => (
