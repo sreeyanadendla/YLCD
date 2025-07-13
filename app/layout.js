@@ -12,12 +12,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "YLCD",
-  description: "YLCD",
+  title: "Young Leaders Career Discovery",
+  description: "Where students explore careers, leadership, and their real potential.",
   icons: {
     icon: "/favicon.ico",
   },
+  openGraph: {
+    title: "Young Leaders Career Discovery",
+    description: "Where students explore careers, leadership, and their real potential.",
+    url: "https://youngleaderscareerdiscovery.com",
+    siteName: "YLCD",
+    images: [
+      {
+        url: "/preview.png",
+        width: 512,
+        height: 512,
+        alt: "YLCD Logo",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Young Leaders Career Discovery",
+    description: "Where students explore careers, leadership, and their real potential.",
+    images: ["/preview.png"],
+  },
 };
+
+
 
 
 export default function RootLayout({ children }) {
