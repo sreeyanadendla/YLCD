@@ -21,7 +21,7 @@ export const metadata = {
     ],
   },
   openGraph: {
-    title: "Young Leaders Career Discovery",
+    title: "YLCD",
     description: "Where students explore careers, leadership, and their real potential.",
     url: "https://youngleaderscareerdiscovery.com",
     siteName: "YLCD",
