@@ -187,7 +187,7 @@ const Header = () => (
     </section>
   );
 
-  
+
 // Founder Story Section
 
 const FounderSection = () => (
