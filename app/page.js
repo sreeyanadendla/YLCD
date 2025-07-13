@@ -10,8 +10,8 @@ export default function Home() {
   // Color scheme - exactly what you wanted
   const colors = {
     light: {
-      primary: '#8cb251', // green
-      secondary: '#ffd462', // yellow  
+      primary: '#ffd462', // yellow
+      secondary: '#8cb251', // green  
       accent: '#f8a5c7', // pink
       neutral: '#f8f9fa',
       text: '#2c3e50',
