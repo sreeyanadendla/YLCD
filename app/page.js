@@ -20,8 +20,8 @@ export default function Home() {
       surface: '#f8f9fa'
     },
     dark: {
-      primary: '#9bc95a',
-      secondary: '#ffd970', 
+      primary: '#ffd970',
+      secondary: '#9bc95a', 
       accent: '#f5b3d1',
       neutral: '#1a1a1a',
       text: '#e9ecef',
