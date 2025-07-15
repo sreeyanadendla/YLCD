@@ -671,20 +671,24 @@ const FounderSection = () => (
     >
       <style jsx>{`
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Source+Sans+Pro&display=swap');
-  
+
         * {
           font-family: 'Source Sans Pro', sans-serif;
         }
-  
+
+        h1, h2, h3, h4, h5, h6 {
+          font-family: 'Instrument Serif', serif;
+        }
+
         button:hover {
           transform: translateY(-1px);
         }
-  
+
         .hover\\:scale-105:hover {
           transform: scale(1.05);
         }
       `}</style>
-  
+
       <Header />
       {renderPage()}
       <Footer />
