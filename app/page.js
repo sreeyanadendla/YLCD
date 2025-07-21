@@ -196,9 +196,16 @@ const FounderSection = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-bold text-white mb-6">
+          <h2
+            className="text-3xl font-bold mb-6"
+            style={{
+              fontFamily: 'Instrument Serif, serif',
+              color: theme.text,
+            }}
+          >
             Hey, I'm the confused kid who started this
           </h2>
+
           <p className="text-gray-300 mb-4">
             I've been a walking question mark about my future since forever. The type who stands in front of Netflix for an hour trying to pick something to watch, except it's my entire life.
           </p>
@@ -227,6 +234,7 @@ const FounderSection = () => (
     </div>
   </section>
 );
+
 
   // Events Preview Section
   const EventsPreview = () => (
