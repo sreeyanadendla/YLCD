@@ -55,22 +55,7 @@ export default function Home() {
   ];
 
   // Sample upcoming events
-  const upcomingEvents = [
-    {
-      id: 1,
-      title: "Software Engineering",
-      description: "Join us for an evening with Sarah Chen, a software engineer at Microsoft, as she walks us through what coding actually looks like day-to-day.",
-      date: "August 15th",
-      time: "6:00 PM"
-    },
-    {
-      id: 2,
-      title: "Healthcare & Medicine", 
-      description: "Meet Dr. Rodriguez and learn about the realities of medical school, residency, and what it's really like to be a doctor.",
-      date: "September 12th",
-      time: "6:00 PM"
-    }
-  ];
+  const upcomingEvents = [];
 
   // Your FAQ data
   const faqData = [
@@ -247,81 +232,54 @@ const FounderSection = () => (
 );
 
 
-  // Events Preview Section
-  const EventsPreview = () => (
-    <section className="py-20" style={{ backgroundColor: theme.background }}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 
-            className="text-3xl sm:text-4xl font-bold mb-4"
-            style={{ 
-              fontFamily: 'Instrument Serif, serif',
-              color: theme.text 
-            }}
-          >
-            Upcoming Events
-          </h2>
-          <p style={{ color: theme.textLight }}>
-            Real career exploration, real professionals, real talk
-          </p>
-        </div>
-        
-        <div className="grid md:grid-cols-2 gap-8 mb-8">
-          {upcomingEvents.map((event) => (
-            <div 
-              key={event.id}
-              className="p-6 rounded-2xl border transition-all duration-200 hover:shadow-lg"
-              style={{ 
-                backgroundColor: theme.surface,
-                borderColor: theme.neutral 
-              }}
-            >
-              <h3 
-                className="text-xl font-bold mb-3"
-                style={{ 
-                  fontFamily: 'Instrument Serif, serif',
-                  color: theme.text 
-                }}
-              >
-                {event.title}
-              </h3>
-              <p className="mb-4" style={{ color: theme.textLight }}>
-                {event.description}
-              </p>
-              <div className="flex items-center justify-between">
-                <div className="flex items-center space-x-4 text-sm" style={{ color: theme.textLight }}>
-                  <div>📅 {event.date}</div>
-                  <div>🕕 {event.time}</div>
-                </div>
-                <button 
-                  className="px-4 py-2 rounded-lg font-medium transition-colors"
-                  style={{ 
-                    backgroundColor: theme.accent,
-                    color: theme.background 
-                  }}
-                >
-                  Sign Up
-                </button>
-              </div>
-            </div>
-          ))}
-        </div>
-        
-        <div className="text-center">
-          <button 
-            className="px-6 py-3 font-semibold rounded-lg transition-all duration-200 hover:scale-105"
-            style={{ 
-              backgroundColor: theme.secondary,
-              color: theme.background 
-            }}
-            onClick={() => setCurrentPage('events')}
-          >
-            View All Events
-          </button>
+// Events Preview Section
+const EventsPreview = () => (
+  <section className="py-20" style={{ backgroundColor: theme.background }}>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="text-center mb-12">
+        <h2
+          className="text-3xl sm:text-4xl font-bold mb-4"
+          style={{
+            fontFamily: 'Instrument Serif, serif',
+            color: theme.text,
+          }}
+        >
+          Upcoming Events
+        </h2>
+        <p style={{ color: theme.textLight }}>
+          Real career exploration, real professionals, real talk
+        </p>
+      </div>
+
+      <div className="flex justify-center mb-12">
+        <div
+          className="p-6 rounded-2xl text-center text-lg font-semibold"
+          style={{
+            backgroundColor: theme.surface,
+            color: theme.textLight,
+            minWidth: '240px',
+          }}
+        >
+          📅 Upcoming events: <span style={{ color: theme.primary }}>TBD</span>
         </div>
       </div>
-    </section>
-  );
+
+      <div className="text-center">
+        <button
+          className="px-6 py-3 font-semibold rounded-lg transition-all duration-200 hover:scale-105"
+          style={{
+            backgroundColor: theme.secondary,
+            color: theme.background,
+          }}
+          onClick={() => setCurrentPage('events')}
+        >
+          View All Events
+        </button>
+      </div>
+    </div>
+  </section>
+);
+
 
   // FAQ Page
   const FAQPage = () => {
