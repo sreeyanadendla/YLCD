@@ -234,7 +234,7 @@ const FounderSection = () => (
 
 // Events Preview Section
 const EventsPreview = () => (
-  <section className="py-15" style={{ backgroundColor: theme.background }}>
+  <section className="pt-12 pb-20" style={{ backgroundColor: theme.background }}>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="text-center mb-12">
         <h2
