@@ -3,6 +3,17 @@
 import React, { useState } from 'react';
 import Image from "next/image";
 
+const SectionDivider = () => (
+  <div
+    style={{
+      height: '1px',
+      background: 'linear-gradient(to right, #edbb3b, #f5b3d1)',
+      margin: '60px auto',
+      maxWidth: '80%',
+      opacity: 0.7,
+    }}
+  />
+);
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -649,25 +660,28 @@ const FounderSection = () => (
     </footer>
   );
 
-  // Page Router
-  const renderPage = () => {
-    switch(currentPage) {
-      case 'events':
-        return <EventsPage />;
-      case 'faq':
-        return <FAQPage />;
-      case 'contact':
-        return <ContactPage />;
-      default:
-        return (
-          <>
-            <HeroSection />
-            <FounderSection />
-            <EventsPreview />
-          </>
-        );
-    }
-  };
+// Page Router
+const renderPage = () => {
+  switch (currentPage) {
+    case 'events':
+      return <EventsPage />;
+    case 'faq':
+      return <FAQPage />;
+    case 'contact':
+      return <ContactPage />;
+    default:
+      return (
+        <>
+          <HeroSection />
+          <SectionDivider />
+          <FounderSection />
+          <SectionDivider />
+          <EventsPreview />
+        </>
+      );
+  }
+};
+
 
   return (
     <div
