@@ -385,7 +385,7 @@ const EventsPreview = () => (
                   Email
                 </p>
                 <p style={{ color: theme.textLight }}>
-                  hello@youngleaderscareerdiscovery.com
+                  ylcd@youngleaderscareerdiscovery.com
                 </p>
               </div>
             </div>
