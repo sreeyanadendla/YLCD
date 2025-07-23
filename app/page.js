@@ -65,7 +65,7 @@ export default function Home() {
     },
     {
       question: "When is it?",
-      answer: "We host events once a month, kicking off with our first event on August 2nd. Future dates will be announced as we keep building this thing together."
+      answer: "We host events once a month. First event TBD. Future dates will be announced as we keep building this thing together."
     },
     {
       question: "What do we get out of this?",
