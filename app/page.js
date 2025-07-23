@@ -604,7 +604,7 @@ const EventsPreview = () => (
             </h4>
             <div className="space-y-2">
               <p style={{ color: theme.textLight }}>📱 @youngleaderscareerdiscovery</p>
-              <p style={{ color: theme.textLight }}>✉️ hello@youngleaderscareerdiscovery.com</p>
+              <p style={{ color: theme.textLight }}>✉️ ylcd@youngleaderscareerdiscovery.com</p>
             </div>
           </div>
         </div>
